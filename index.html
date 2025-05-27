@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layered 3D Model</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <label
+        ><input type="checkbox" id="toggleBase" checked /> Show Base
+        Layer</label
+      >
+      <label
+        ><input type="checkbox" id="toggleRails" checked /> Show Rail
+        Layer</label
+      >
+      <label
+        ><input type="checkbox" id="togglePiezo" checked /> Show Piezo
+        Layer</label
+      >
+      <label
+        ><input type="checkbox" id="toggleSolar" checked /> Show Solar
+        Panel</label
+      >
+      <label
+        >Spacing:
+        <input
+          type="range"
+          id="spacingSlider"
+          min="0"
+          max="3"
+          step="0.1"
+          value="1"
+      /></label>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
